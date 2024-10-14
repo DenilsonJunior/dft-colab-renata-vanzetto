@@ -1,0 +1,272 @@
+include components/imports
+include templates/imports
+
+doctype html
+html(lang="pt-br")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Estrutura Dafiti
+        link(rel="stylesheet" href="styles/main.css")
+        link(rel="stylesheet", href="external/style.css")
+    body
+        .dafitiStructure
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            
+            +bannerFull(
+                {
+                    "type": "image",
+                    "imgDesk": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_09_53_45_CAPA-MODA-CASUAL.jpg",
+                    "imgMob": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_10_48_47_CAPA-MODA-CASUAL-v3.jpg",
+                    "alt": "Mulheres vestindo bermuda, camisa listrada, regata bicolor, scarpin bico fino com estilo casual esportivo."
+                },
+                {
+                    "type": "title",
+                    "title": "<i>Moda</i><b> Casual Esportiva</b>"
+                },
+                {
+                    "type": "text",
+                    "text": "A collab mais saborosa e colorida tá na Dafiti! Descubra nossa nova coleção exclusiva que une estilo e gastronomia em peças únicas, criada em parceria com Renata Vanzetto."
+                }
+            )
+
+            +categories(
+                'categories',
+                {
+                    "type": 'titlepag',
+                    "title": 'Principais peças'
+                },
+                [
+                    {
+                        "link": "#camiseta",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_17_01._Camiseta.jpg",
+                        "alt": "Homem vestindo camiseta listrada da marca adidas, com manga curta e gola redonda, além de listras nas cores rosa e azul.",
+                        "title": "Camiseta"
+                    },
+                    {
+                        "link": "#jaqueta",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_19_02._Jaqueta.jpg",
+                        "alt": "Jaqueta bomber adidas originals vermelha com logo trefoil, mangas raglan com listras laterais e bolsos frontais.",
+                        "title": "Jaqueta"
+                    },
+                    {
+                        "link": "#calca",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_20_03._Calça.jpg",
+                        "alt": "Mulher vestindo calça firebird adidas preta com recorte lateral branco, fenda, botões, listras bordadas e logo da marca.",
+                        "title": "Calça"
+                    },
+                    {
+                        "link": "#regata",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_22_04._Regata.jpg",
+                        "alt": "Mulher vestindo regata bicolor, estrutura branca e recortes em preto, com barra mais ajustada e comprimento levemente curto.",
+                        "title": "Regata"
+                    },
+                    {
+                        "link": "#tenis",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_23_05._Tênis.jpg",
+                        "alt": "Tênis New Balance 530 roxo e azul, com logo lateral prateado e solado em bege e com relevos e texturas.",
+                        "title": "Tênis"
+                    },
+                    {
+                        "link": "#sapatilha",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_23_08_51_39_06._Sapatilha.jpg",
+                        "alt": "Sapatilha prateada, com textura e acabamento metalizado, tira superior com fivela ajustável e salto baixo.",
+                        "title": "Sapatilha"
+                    },
+                    {
+                        "link": "#scarpin",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_23_08_51_38_07._Scarpin.jpg",
+                        "alt": "Scarpin slinkback vermelho com bico fino, laço frontal, ajuste lateral por fivela e salto baixo e fino com base redonda.",
+                        "title": "Scarpin"
+                    },
+                    {
+                        "link": "#camisa",
+                        "img": "https://dafitistatic.dafiti.com.br/cms/page-conteudista/2024_09_18_13_43_29_08._Camisa.jpg",
+                        "alt": "Mulher vestindo camisa listrada azul e branca aberta com mangas longas, modelagem oversized, botões brancos e bolso frontal.",
+                        "title": "Camisa"
+                    },
+                ]
+            )
+
+            +questions(
+                {
+                    "type": 'titlepag',
+                    "title": 'Saiba Mais Sobre a Collab Dafiti + Renata Vanzetto'
+                },
+                [
+                    { 
+                        titlebtn: 'Quem é Renata Vanzetto?', 
+                        text: `
+                            <h4>Renata Vanzetto: a chef inovadora que une gastronomia e moda com criatividade!</h4>
+                            <p>Renata Vanzetto é uma renomada chef de cozinha, mãe de 3, influenciadora e empresária, conhecida por sua trajetória inovadora no mundo da gastronomia. Ela lidera sete restaurantes em São Paulo, incluindo os renomados Ema, Matilda Lanches, Mamma Vanzetto e os bares MeGusta e Mé Taberna, também esteve à frente de estágios em restaurantes como o Noma, na Europa. Além de ser autodidata, Renata também explora novas áreas, como a moda, mostrando sua criatividade multifacetada.</p>
+                        ` 
+                    },
+                    { 
+                        titlebtn: 'Por que criar uma collab entre a Dafiti e Renata Vanzetto?', 
+                        text: `
+                            <h4>Coleção Dafiti por Renata Vanzetto: união de moda e gastronomia em produtos exclusivos e cheios de estilo!</h4>
+                            <p>A collab entre Dafiti e Renata Vanzetto une moda e gastronomia de forma inovadora, refletindo a criatividade incontrolável de Renata e o compromisso da Dafiti com a exclusividade e inovação. A parceria celebra a fusão entre dois universos aparentemente distintos, oferecendo produtos que são expressões de estilo e sabor. A collab também fortalece a conexão da Dafiti com o público que busca experiências sensoriais únicas, não apenas produtos de moda.</p>
+                        ` 
+                    },
+                    { 
+                        titlebtn: 'Quais são as principais inspirações por trás da coleção de Renata Vanzetto para a Dafiti?', 
+                        text: `
+                            <p>A coleção de Renata Vanzetto para a Dafiti é marcada por inspirações que unem moda e gastronomia de maneira inovadora. Cada detalhe reflete elementos essenciais da culinária da chef, criando uma fusão única entre estilo e sabor. As principais inspirações incluem:</p>
+                            <ul>
+                                <li><h4>Identidade Culinária</h4>Alimentos e utensílios que fazem parte da identidade culinária de Renata.</li>
+                                <li><h4>Gastronomia Italiana</h4>Ícones da gastronomia italiana, como as tradicionais toalhas de mesa xadrez dos restaurantes.</li>
+                                <li><h4>Ingredientes Frescos</h4>O uso de ingredientes frescos e autênticos, como o coentro, um elemento central em sua cozinha.</li>
+                                <li><h4>Cores e Texturas</h4>Cores vibrantes e texturas complexas que remetem à autenticidade e criatividade da chef.</li>
+                            </ul>
+                        `
+                    },
+                    { 
+                        titlebtn: 'Quais modelos fazem parte da coleção assinada por Renata Vanzetto?', 
+                        text: `
+                            <p>A coleção Dafiti por Renata Vanzetto conta com oito papetes, sendo dois modelos principais, cada um disponível em quatro cores diferentes:</p>
+                            <ul>
+                                <li><h4>Papete Toalha da Mamma</h4>Inspirada nas toalhas de mesa xadrez dos restaurantes italianos, com tiras de couro acolchoadas e trançadas manualmente.</li>
+                                <li><h4>Papete Coentruda</h4>Com cerca de 240 mini-coentros cortados a laser na camurça, representando o frescor e autenticidade do coentro, um ingrediente fundamental na cozinha de Renata.</li>
+                            </ul>
+                        `
+                    },
+                    { 
+                        titlebtn: 'Quais tendências de moda estão presentes na coleção de Renata Vanzetto para a Dafiti?', 
+                        text: `
+                            <h4>Tendências irresistíveis e sustentáveis da coleção Dafiti + Renata Vanzetto!</h4>
+                            <p>A coleção explora a tendência de peças artesanais e sustentáveis, feitas à mão com materiais como couro, camurça e couro napa. Ela também incorpora referências à moda clássica italiana, com o uso de padrões xadrez, e a busca por designs inovadores que unem moda e elementos culturais, como o uso criativo do coentro nas peças.</p>
+                        `
+                    },
+                    { 
+                        titlebtn: 'Como os modelos da coleção se diferenciam entre si?', 
+                        text: `
+                            <p>A coleção de rasteiras da collab Renata Vanzetto e Dafiti apresenta duas opções distintas, cada uma com características únicas que refletem a essência da chef e sua conexão com a moda. Abaixo, uma tabela compara as principais características de cada modelo:</p>
+                            <div class="boxScroll">
+                                <table border="1">
+                                    <thead>
+                                        <tr>
+                                        <th>Características</th>
+                                        <th>Papete Toalha da Mamma</th>
+                                        <th>Papete Coentruda</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td><h4>Design</h4></td>
+                                        <td>Acolchoado e trançado, inspirado nas tradicionais toalhas de mesa italianas.</td>
+                                        <td>Leve e criativo, com mini-coentros cortados a laser.</td>
+                                        </tr>
+                                        <tr>
+                                        <td><h4>Inspiração</h4></td>
+                                        <td>Tradição e conforto das toalhas de mesa italianas, evocando elegância e familiaridade.</td>
+                                        <td>Frescor e autenticidade da culinária de Renata, refletindo um estilo ousado e moderno.</td>
+                                        </tr>
+                                        <tr>
+                                        <td><h4>Estilo</h4></td>
+                                        <td>Elegante, remetendo a uma estética clássica e acolhedora.</td>
+                                        <td>Ousado e inovador, com um toque criativo e fresco.</td>
+                                        </tr>
+                                        <tr>
+                                        <td><h4>Materiais</h4></td>
+                                        <td>Couro acolchoado, proporcionando conforto e durabilidade.</td>
+                                        <td>Camurça, garantindo leveza e um visual contemporâneo.</td>
+                                        </tr>
+                                        <tr>
+                                        <td><h4>Público-alvo</h4></td>
+                                        <td>Consumidoras que buscam elegância e conforto em suas escolhas de moda.</td>
+                                        <td>Pessoas que valorizam criatividade e originalidade em suas sandálias.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        `
+                    },
+                    { 
+                        titlebtn: 'Quais são os benefícios e diferenciais das rasteiras dessa coleção em relação a outras marcas?', 
+                        text: `
+                            <p>As rasteiras da collab Renata Vanzetto para Dafiti apresentam diversos benefícios e diferenciais que as destacam no mercado. Cada detalhe foi cuidadosamente pensado para garantir qualidade, exclusividade e inovação. Os principais benefícios e diferenciais são:</p>
+                            <ul>
+                                <li><h4>Produção artesanal</h4>Feitas à mão no Brasil, garantindo exclusividade e cuidado em cada peça.</li>
+                                <li><h4>Materiais de alta qualidade</h4>Confeccionadas com couro, camurça e couro napa, proporcionando durabilidade e conforto.</li>
+                                <li><h4>Incorporação de elementos culturais</h4>O design reflete a identidade cultural da chef Renata Vanzetto, trazendo originalidade e autenticidade às peças.</li>
+                                <li><h4>Experiência sensorial</h4>As rasteiras oferecem uma experiência completa que vai além da moda, unindo estilo e sabor de maneira única.</li>
+                            </ul>
+                            <p>Esses diferenciais posicionam as rasteiras da collab como produtos inovadores e exclusivos, que traduzem a essência de Renata Vanzetto em peças sofisticadas e culturalmente ricas, proporcionando uma verdadeira experiência aos consumidores.</p>
+                        `
+                    },
+                    { 
+                        titlebtn: 'Como montar looks estilosos utilizando peças da coleção Renata Vanzetto para Dafiti?', 
+                        text: `
+                            <h4>8 papetes, muitos looks</h4>
+                            <p>As rasteiras da coleção são versáteis e podem ser combinadas em suas opções de cores com diferentes looks. A tabela abaixo destaca como usar cada modelo e sugestões de combinações:</p>
+                            <div class="boxScroll">
+                                <table border="1">
+                                    <thead>
+                                        <tr>
+                                        <th>Estilo</th>
+                                        <th>Ocasião</th>
+                                        <th>Papete Dafiti + Renata Vanzetto</th>
+                                        <th>Dica de Look</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>Elegante e Minimalista</td>
+                                        <td>Eventos casuais e jantares</td>
+                                        <td>Papete Toalha da Mamma</td>
+                                        <td>Combine com um vestido leve ou uma saia midi para um look sofisticado.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Descontraído e Colorido</td>
+                                        <td>Saídas informais, passeios</td>
+                                        <td>Papete Coentruda</td>
+                                        <td>Use com shorts de alfaiataria ou um vestido florido para um toque criativo.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Versátil e Casual</td>
+                                        <td>Dia a dia, encontros com amigos</td>
+                                        <td>Ambos os modelos</td>
+                                        <td>Experimente misturar com camisetas básicas e calças leves para um visual prático.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Boho Chic</td>
+                                        <td>Festivais, passeios ao ar livre</td>
+                                        <td>Papete Coentruda</td>
+                                        <td>Combine com uma saia longa e uma blusa cropped para um look descontraído e estiloso.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Clássico e Sofisticado</td>
+                                        <td>Reuniões informais, brunch com amigos</td>
+                                        <td>Papete Toalha da Mamma</td>
+                                        <td>Combine com calças de linho e uma blusa de seda para um visual refinado.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Fashionista e Moderno</td>
+                                        <td>Eventos sociais, festas</td>
+                                        <td>Papete Coentruda</td>
+                                        <td>Use com um vestido midi ajustado e acessórios ousados para um look impactante.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        `
+                    },
+                    { 
+                        titlebtn: 'Onde é possível encontrar os produtos da collab entre Dafiti e Renata Vanzetto?', 
+                        text: `
+                            <h4>Compre sua papete Dafiti + Renata Vanzetto no nosso site ou app.</h4>
+                            <p>Os produtos da collab Renata Vanzetto e Dafiti são vendidos exclusivamente pela Dafiti, tanto no site quanto no aplicativo da marca. A Dafiti se destaca no mercado de e-commerce com diferenciais como frete grátis, entrega rápida, devolução fácil e um ambiente de compra seguro, garantindo uma experiência excepcional aos clientes.</p>
+                            <p>Com esses benefícios, você pode adquirir os itens exclusivos da coleção com a tranquilidade de saber que receberá seus produtos rapidamente e poderá contar com um suporte de qualidade, tornando suas compras ainda mais agradáveis.</p>
+                        `
+                    },
+                ]
+            )
+
+    //- script(src="external/scripts.js")
+    script(src="js/script.js") 
+
+            
+
+
