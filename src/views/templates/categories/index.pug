@@ -1,8 +1,7 @@
-mixin categories(id='', titleBlock, cards)
+mixin categories(id='', titleBlock=null, cards)
     .categoriesTemplate(id=id)
-        if titleBlock.type === 'titlepag'
+        if titleBlock && titleBlock.type === 'titlepag'
             .mainTitle
-                //- .line
                 h2= titleBlock.title
         .boxFlex
             each card in cards

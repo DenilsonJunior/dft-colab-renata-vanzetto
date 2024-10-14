@@ -2,7 +2,7 @@ mixin questions(titleBlock, buttons)
     .questionsTemplate
         if titleBlock.type === 'titlepag'
             .questionsTitle
-                .line
+                //- .line
                 h3(data-title=titleBlock.title)= titleBlock.title
         .accordeon
             each button, index in buttons

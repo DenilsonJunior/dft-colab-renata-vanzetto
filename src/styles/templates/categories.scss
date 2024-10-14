@@ -1,8 +1,9 @@
 .categoriesTemplate {
     width: 100%;
-    padding: 2vw 0 0;
-    background-image: url('https://www.eucolo.com.br/wp-content/uploads/2017/08/papel-de-parede-adesivo-listrado-verde-2.jpg');
-    background-size: 25%;
+    // padding: 2vw 0 0;
+    // background-image: url('https://www.eucolo.com.br/wp-content/uploads/2017/08/papel-de-parede-adesivo-listrado-verde-2.jpg');
+    // background-size: 25%;
+    background-color: #849f91;
     @media (max-width: 768px) {
         padding: 0 0rem 3vw;
     }
@@ -31,7 +32,7 @@
             width: calc((100% / 4) - .9vw);
             text-decoration: none;
             box-sizing: border-box;
-            border-radius: 2.2vw;
+            // border-radius: 2.2vw;
             @media (max-width: 768px) {
                 border-radius: 3vw;
                 width: auto;
@@ -55,9 +56,9 @@
             .boxImg {
                 overflow: hidden;
                 position: relative;
-                border-radius: 2.2vw 2.2vw 0 0;
+                // border-radius: 2.2vw 2.2vw 0 0;
                 @media (max-width: 768px) {
-                    border-radius: 3vw 3vw 0 0;
+                    // border-radius: 3vw 3vw 0 0;
                 }
                 img {
                     transition-duration: .3s;
@@ -76,9 +77,9 @@
                 background-color: white;
                 display: flex;
                 justify-content: center;
-                border-radius: 0 0 2.2vw 2.2vw;
+                // border-radius: 0 0 2.2vw 2.2vw;
                 @media (max-width: 768px) {
-                    border-radius: 0 0 3vw 3vw;
+                    // border-radius: 0 0 3vw 3vw;
                 }
 
                 h3 {
