@@ -8,13 +8,16 @@
         .mainTitle {
             width: 100%;
             padding: 0 5vw;
-            h3 {
+            h2 {
                 text-align: center;
                 text-transform: uppercase;
                 color: #47703B;
                 font-weight: 700;
                 font-size: 5.2vw;
                 line-height: 1;
+                @media (max-width: 768px) {
+                    font-size: 5.6vw;
+                }
             }
         }
     
@@ -61,9 +64,11 @@
                     border-radius: 1vw;
                     position: relative;
                     transition: background-color 0.3s ease; /* Suaviza a cor de fundo */
-                    font-size: 1.4vw;
-                    @media (max-width: 768px) {
-                        font-size: 3vw;
+                    h3 {
+                        font-size: 1.4vw;
+                        @media (max-width: 768px) {
+                            font-size: 3.2vw;
+                        }
                     }
     
                     @media (max-width: 768px) {
@@ -87,7 +92,7 @@
                         color: #47703B;
     
                         @media (max-width: 768px) {
-                            font-size: 4vw;
+                            font-size: 5vw;
                             width: 5vw;
                             height: 5vw;
                         }
@@ -131,7 +136,7 @@
                         line-height: 1.2;
                         font-weight: 700;
                         @media (max-width: 768px) {
-                            font-size: 3vw;
+                            font-size: 3.2vw;
                         }
                     }
 
@@ -140,7 +145,7 @@
                         line-height: 1.2;
                         font-weight: 500;
                         @media (max-width: 768px) {
-                            font-size: 2.8vw;
+                            font-size: 3vw;
                         }
                     }
     
