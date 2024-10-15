@@ -10,6 +10,7 @@ mixin categories(id='', titleBlock=null, cards)
                         img(src=card.img, alt=card.alt)
                     .boxText
                         if card.text
-                            p!= card.text
+                            .text
+                                p!= card.text
                             button
                                 p comprar

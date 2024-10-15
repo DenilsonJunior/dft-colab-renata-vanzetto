@@ -51,6 +51,7 @@
                 box-sizing: border-box;
                 border-radius: 2.2vw;
                 border: #47703B solid .2vw;
+                background-color: #ffffff;
                 @media (max-width: 768px) {
                     // border-radius: 3vw;
                     width: auto;
@@ -101,9 +102,8 @@
                     padding: 1vw;
                     @media (max-width: 768px) {
                         // border-radius: 0 0 3vw 3vw;
-                        padding: 2vw 1vw;
+                        padding: 2vw;
                     }
-    
                     p {
                         color: black;
                         font-size: 1.1vw;
@@ -111,7 +111,15 @@
                         font-weight: 500;
     
                         @media (max-width: 768px) {
-                            font-size: 2.4vw;
+                            font-size: 2.8vw;
+                        }
+                    }
+
+                    .text {
+                        p {
+                            @media (max-width: 768px) {
+                                height: 10.5vw;
+                            }
                         }
                     }
     
@@ -131,7 +139,7 @@
     .detal {
         position: absolute;
         &.detal1 {
-            width: 45vw;
+            width: 40vw;
             top: 0;
             left: 0;
             @media (max-width: 768px) {
@@ -139,7 +147,7 @@
             }
         }
         &.detal2 {
-            width: 37vw;
+            width: 35vw;
             top: 0;
             right: 0;
             @media (max-width: 768px) {
@@ -155,7 +163,7 @@
             }
         }
         &.detal4 {
-            width: 24vw;
+            width: 23vw;
             bottom: 0;
             right: 1vw;
             @media (max-width: 768px) {

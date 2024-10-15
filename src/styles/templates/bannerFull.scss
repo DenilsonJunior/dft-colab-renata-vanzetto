@@ -48,7 +48,7 @@
     }
     .blockText {
         background-color: #FC948B;
-        padding: 2vw 8.5vw;
+        padding: 2vw 18vw;
         @media (max-width: 768px) {
             padding: 5vw;
         }
@@ -58,6 +58,7 @@
             text-align: center;
             font-size: 1.8vw;
             line-height: 1;
+            font-weight: 300;
             @media (max-width: 768px) {
                 font-size: 3.8vw;
             }
