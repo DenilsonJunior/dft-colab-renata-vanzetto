@@ -1,9 +1,8 @@
-mixin questions(titleBlock, buttons)
+mixin questions(titleBlock=null, buttons)
     .questionsTemplate
-        if titleBlock.type === 'titlepag'
-            .questionsTitle
-                //- .line
-                h3(data-title=titleBlock.title)= titleBlock.title
+        if titleBlock && titleBlock.type === 'titlepag'
+            .mainTitle
+                h3= titleBlock.title
         .accordeon
             each button, index in buttons
                 .button 
